@@ -1,2 +1,2 @@
 # information-security
-This repository has been created by demand to get practical skills in penetration testing by request from a potential client to establish information security for the government organisation. 
+This repository has been created by demand to get practical skills in penetration testing by request from a potential client to establish information security for the government organisation (<a href="https://gelassen.github.io/blog/2023/10/21/case-study-information-security-of-government-organisation.html">https://gelassen.github.io/blog/2023/10/21/case-study-information-security-of-government-organisation.html</a>). 
