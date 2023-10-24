@@ -20,3 +20,14 @@ Mitigation steps:
 3. Investigate further
 
 ## Exploit User-Agent to run executable code on the backend
+
+## Analyse web resource for leaked credentials and other valuable information 
+1. Check source code of the page
+2. Check backend potenial paths for possibles hidden directories:
+  - chekc sitemap and /robots.txt for a clue
+  - write a tool or use an existing one to brute force common names for a site
+https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
+
+Mitigation steps:
+
+https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
