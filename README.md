@@ -64,4 +64,13 @@ Mitigation steps:
   thing that explicitly points to the framework.
 
 https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20OWASP%20testing%20guide%20v4.pdf (Fingerprint Web Application Framework chapter)
+
 https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+
+## Site structure traversal
+At least on my training resource it is common to see public web server folders and urls paths which should not be acessible for public. 
+
+Use special software or write your own to brute force possible pathes
+
+Mitigation steps:
+With help of specialized software analyse holes and proper confugure backend
