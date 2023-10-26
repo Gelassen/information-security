@@ -74,3 +74,8 @@ Use special software or write your own to brute force possible pathes
 
 Mitigation steps:
 With help of specialized software analyse holes and proper confugure backend
+
+## CLFR attacks
+
+HTTP Splitting/Smuggling chapter <a href="https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20OWASP%20testing%20guide%20v4.pdf">OWASP testing guide</a>
+
