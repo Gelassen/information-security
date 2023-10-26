@@ -49,16 +49,17 @@ Properly configure web server or in general replace basic auth with reliable sol
 Cookies, html pages, headers and few others things might disclose information about the software used on the backend. 
 
 Mitigation steps: 
-HTTP headers
+
+1. HTTP headers
   Check the configuration and disable or obfuscate all HTTP-headers
   that disclose information the technologies used. Here is an interest-
   ing article about HTTP-headers obfuscation using Netscaler: http://
   grahamhosking.blogspot.ru/2013/07/obfuscating-http-header-us-
   ing-netscaler.html
-Cookies
+2. Cookies
   It is recommended to change cookie names by making changes in the
   corresponding configuration files.
-HTML source code
+3. HTML source code
   Manually check the contents of the HTML code and remove every-
   thing that explicitly points to the framework.
 
