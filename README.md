@@ -79,3 +79,19 @@ With help of specialized software analyse holes and proper confugure backend
 
 HTTP Splitting/Smuggling chapter <a href="https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20OWASP%20testing%20guide%20v4.pdf">OWASP testing guide</a>
 
+## Attack on uploader feature of web app
+Uploading some custom user's file might lead to open security breach for malware.
+
+1. Write a custom script (e.g. php like) which will upload file on server and returns links on it
+2. Find out this just uploaded script on the backend by traversing urls
+3. Upload a custom shell like b375k and explore web server unauthorised zones
+
+Mitigation steps:
+1. Control on file extensions would not help much, but make sure user's uploaded files would not be accessible by user *directly* via *direct* URL is a right strategy. This can be done either by storing uploaded files outside of the web root or configuring the web server to deny access to the uploads directory.
+2. System generated file names 
+
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Secure%20file%20upload%20in%20PHP%20web%20applications.pdf
+
+Test Upload of Malicious Files chapter
+https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
+
