@@ -95,3 +95,8 @@ https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Secure%20file%20u
 Test Upload of Malicious Files chapter
 https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
 
+## Attack on .git files
+If .git of the backend is available for public, it is possible to dump this files by anyone and go through version history and whole code to gather credentials, security holes, etc. 
+
+Mitigation steps:
+Remove any .git folders from backend. Existing or own script/plugin might help to automate this
