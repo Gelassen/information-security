@@ -100,3 +100,8 @@ If .git of the backend is available for public, it is possible to dump this file
 
 Mitigation steps:
 Remove any .git folders from backend. Existing or own script/plugin might help to automate this
+
+## SQL injection
+
+Mitigation steps:
+https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
