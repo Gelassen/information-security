@@ -112,5 +112,7 @@ Remove any .git folders from backend. Existing or own script/plugin might help t
 4. Pocking specific table to find out right column names:
 /api/v2/?id=1'  or id='1' union select username,password from users-- -+
 
+Go to more complex sql injections, e.g. blind and time based. 
+
 Mitigation steps:
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
