@@ -23,7 +23,7 @@ $ dirb <endpoint> <bruteforce-dictionary>
 3d. Go deeper with other penetration techniques
 
 4. Based on fingerprint stage results search for recent vulnerabilities (and possible already published exploits)
-Nmap command launch and sql injections should give us information about endpoint operating system and database used by the backend. This information might be used for search recently discovered vulnerabilities, e.g. in <a href="https://nvd.nist.gov/vuln/full-listing/2023/11">US National Vulnerability Database</a>. This knowledge might be used to write own exploit to hack the system or even to use a developed one. 
+Nmap command launch and sql injections should give us information about endpoint operating system and database used by the backend. This information might be used for search recently discovered vulnerabilities, e.g. in <a href="https://nvd.nist.gov/vuln/full-listing/2023/11">US National Vulnerability Database</a> or <a href="https://bdu.fstec.ru/vul?sort=datv">Russian's FSTEC vulnerabilities database</a>. This knowledge might be used to write own exploit to hack the system or even to use a developed one. 
 
 Tools like Nessus or alternative solutions might help to automate such search. 
 
