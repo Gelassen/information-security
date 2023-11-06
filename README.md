@@ -3,13 +3,13 @@ This repository has been created by demand to get practical skills in penetratio
 
 # Attacks
 
-## Obtain private address of the organisation to further spoof it
+## Obtain private address of the organization to further spoof it
 1. Exchange server has to expose its internal IP on each email
-2. Misconfigureed DNS
+2. Misconfigured DNS
 3. Memory leaks
 4. Cracking WiFi
 5. Plug-in into a webinar or conference room to sniff traffic
-6. Phishing emails with special script to gather informaition from PC and network
+6. Phishing emails with special script to gather information from PC and network
 
 <a href="https://security.stackexchange.com/questions/111308/how-to-get-an-internal-network-address-range-during-a-footprinting-stage">https://security.stackexchange.com/questions/111308/how-to-get-an-internal-network-address-range-during-a-footprinting-stage</a>
 
@@ -21,10 +21,10 @@ Mitigation steps:
 
 ## Exploit User-Agent to run executable code on the backend
 
-## Analyse web resource for leaked credentials and other valuable information 
+## Analyze web resource for leaked credentials and other valuable information 
 1. Check source code of the page
-2. Check backend potenial paths for possibles hidden directories:
-  - chekc sitemap and /robots.txt for a clue
+2. Check backend potential paths for possibles hidden directories:
+  - check sitemap and /robots.txt for a clue
   - write a tool or use an existing one to brute force common names for a site
 https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
 
@@ -33,7 +33,7 @@ Mitigation steps:
 https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
 
 ## By pass Basic Auth
-Basic Auth might be by passed due misconfugiration on the server side. It is done by using not intended Http request (e.g. PUT insead of POST) or totaly artificial Http Request: 
+Basic Auth might be by passed due misconfugiration on the server side. It is done by using not intended Http request (e.g. PUT instead of POST) or totally artificial Http Request: 
 ```
     Authentication must be implemented with a <Limit VERB VERB VERB> directive. As this only enforces authentication for the listed verbs. If the restrictions only cover GET and POST for example you can bypass this with ver juggling (use PUT instead of POST)
 
@@ -53,9 +53,7 @@ Mitigation steps:
 1. HTTP headers
   Check the configuration and disable or obfuscate all HTTP-headers
   that disclose information the technologies used. Here is an interest-
-  ing article about HTTP-headers obfuscation using Netscaler: http://
-  grahamhosking.blogspot.ru/2013/07/obfuscating-http-header-us-
-  ing-netscaler.html
+  ing article about HTTP-headers obfuscation using Netscaler: http://grahamhosking.blogspot.ru/2013/07/obfuscating-http-header-us-ing-netscaler.html
 2. Cookies
   It is recommended to change cookie names by making changes in the
   corresponding configuration files.
@@ -68,12 +66,12 @@ https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20OWASP%20testing%2
 https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
 
 ## Site structure traversal
-At least on my training resource it is common to see public web server folders and urls paths which should not be acessible for public. 
+At least on my training resource it is common to see public web server folders and urls paths which should not be accessible for public. 
 
-Use special software or write your own to brute force possible pathes
+Use special software or write your own to brute force possible paths
 
 Mitigation steps:
-With help of specialized software analyse holes and proper confugure backend
+With help of specialized software analyze holes and proper configure backend
 
 ## CLFR attacks
 
@@ -84,7 +82,7 @@ Uploading some custom user's file might lead to open security breach for malware
 
 1. Write a custom script (e.g. php like) which will upload file on server and returns links on it
 2. Find out this just uploaded script on the backend by traversing urls
-3. Upload a custom shell like b375k and explore web server unauthorised zones
+3. Upload a custom shell like b375k and explore web server unauthorized zones
 
 Mitigation steps:
 1. Control on file extensions would not help much, but make sure user's uploaded files would not be accessible by user *directly* via *direct* URL is a right strategy. This can be done either by storing uploaded files outside of the web root or configuring the web server to deny access to the uploads directory.
